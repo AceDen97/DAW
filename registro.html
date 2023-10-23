@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="imagenes, album" name="keywords">
+    <meta content="Den y Pedro" name="author">
+    <link href="registro.css" rel="stylesheet">
+    <link href="general.css" rel="stylesheet">
+    <title>General cambiar nombre</title>
+</head>
+<body>
+<header id="Cab">
+    <div class="logo">
+        <a href="indexinicio.html">
+            <img alt="Logotipo" class="tam-imag" id="Logo" src="./Descargas/Logo.jpeg">
+        </a>
+    </div>
+    <div class="encabezado">
+        <h1>PI - Pictures & Images</h1>
+    </div>
+    <div class="user-panel">
+        <form action="indexinicio.html" id="form">
+            <label for="login">Login</label>
+            <input autofocus id="login" name="login" required type="text">
+            <label for="pwd">Pwd</label>
+            <input id="pwd" name="pwd" required type="password">
+            <div class="botones">
+                <button class="icon-check" type="submit">Login</button>
+                <button class="icon-cancel" type="reset">Limpiar</button>
+            </div>
+            <p>No eres usuario? <a href="registro.html" id="registro">Regístrate</a></p>
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="#"><span>Inicio</span></a></li>
+        <li><a href="#"><span>Buscar</span></a></li>
+        <li><a href="#"><span>Perfil</span></a></li>
+        <li><a href="#"><span>Logout</span></a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Registro de nuevo usuario</h1>
+    <hr id="linea">
+    <form action="#">
+        <div id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" required type="text">
+            <label for="password">Password:</label>
+            <input id="password" name="password" pattern="[a-zA-Z0-9_.-]{4,20}" required
+                   title="El password no debe tener espacios en blanco y sólo se pueden utilizar letras mayúsculas, minúsculas, números y los caracteres “_”, “-” y “.”. Su longitud no puede ser menor de 4 ni mayor de 20 caracteres"
+                   type="password">
+
+            <label for="password2">Confirmar Password:</label>
+            <input id="password2" name="password2" type="password">
+            <label for="email">Email:</label>
+            <input id="email" name="email" required type="email">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Seleccione...</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+
+
+            </select>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input id="fecha_nacimiento" name="fecha_nacimiento" required type="date">
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione...</option>
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+                <option value="alicante">Alicante</option>
+                <option value="murcia">Murcia</option>
+                <option value="bilbao">Bilbao</option>
+                <option value="toledo">Toledo</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="elche">Elche</option>
+                <option value="torrevieja">Torrevieja</option>
+            </select>
+
+            <label for="pais">País de residencia:</label>
+
+            <select id="pais" name="pais" required>
+                <option value="">Seleccione...</option>
+                <option value="españa">España</option>
+                <option value="francia">Francia</option>
+                <option value="italia">Italia</option>
+                <option value="alemania">Alemania</option>
+                <option value="turquia">Turquia</option>
+                <option value="polonia">Polonia</option>
+                <option value="suecia">Suecia</option>
+                <option value="suiza">Suiza</option>
+                <option value="finlandia">Finlandia</option>
+                <option value="rusia">Rusia</option>
+            </select>
+        </div>
+
+        <div id="imagen">
+            <label for="foto">
+                <img alt="Foto de perfil" class="destacar" id="img_foto" src="./Descargas/Perfil.jpg">
+            </label>
+            <input accept="image/*" id="foto" name="foto" style="display: none;" type="file">
+            <div id="bot">
+                <label class="icon-edit" for="foto" id="boton"></label>
+                <input type="reset" value="Borrar" id="borrar">
+                <input type="submit" value="Registrarse">
+            </div>
+        </div>
+
+    </form>
+</main>
+<footer>
+    <!-- Pie de página -->
+    <p>&copy; 2023 PI - Pictures & Images. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+/* Estilos específicos para el main */
+main {
+    text-align: center;
+}
+
+/* Estilos para las secciones dentro del main */
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Estilos para la tarjeta de perfil */
+.profile-card {
+    gap: 20px;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15%;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    margin: 10px;
+}

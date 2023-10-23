@@ -1,0 +1,275 @@
+/* Estilos generales para todo el documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    min-width: 300px;
+}
+
+/* Estilos para los elementos principales de la página */
+header, nav, main, footer {
+    margin: 1em;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para el header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #17123c;
+    color: white;
+    background-size: cover;
+}
+/*Formulario de registro*/
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #423c6b;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el panel de usuario */
+.user-panel {
+    display: flex;
+    align-items: center;
+}
+
+#inicioform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+#registro {
+    text-decoration: none;
+    color: #fff;
+}
+
+#registro:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para el formulario */
+#inicioform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#inicioform div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.botonera {
+    display: flex;
+    justify-content: space-around;
+}
+
+#registro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Estilos específicos para la navegación */
+nav {
+    background-color: #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* Estilos específicos para el main */
+main {
+    background-color: white;
+}
+
+/* Estilos específicos para el footer */
+footer {
+    background-color: #17123c;
+    color: white;
+    text-align: center;
+}
+/* Estilos para las imágenes en general */
+#Logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+
+/* Ajustes de encabezado y barra para diferentes tamaños de pantalla */
+@media only screen and (min-width: 1px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul {
+        font-size: 12px;
+        flex-direction: column;
+    }
+    main{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 450px){
+    header {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .texto-info {
+        display: none;
+    }
+    nav ul {
+        flex-direction: initial;
+        font-size: 14px;
+    }
+    main{
+        font-size: 16px;
+    }
+    .encabezado{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 701px) {
+    header {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .texto-info {
+        display: block;
+    }
+    nav ul {
+        font-size: 16px;
+    }
+    main{
+        font-size: 18px;
+    }
+    .encabezado{
+        display: initial;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    nav ul {
+        font-size: 20px;
+    }
+    main{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    header{
+        font-size: 22px;
+    }
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #17123c;
+}
+
+/* Estilos para el texto dentro de los enlaces */
+a span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover span {
+    background-color: #f0f0f0;
+}
+
+#enlaces ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+

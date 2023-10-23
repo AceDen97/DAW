@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Página de perfil donde el usuario puede gestionar sus datos" name="description">
+    <meta content="imagenes, album, perfil" name="keywords">
+    <meta content="Den y Pedro" name="author">
+    <link href="perfil.css" rel="stylesheet">
+    <link href="general.css" rel="stylesheet">
+    <title>Ménu usuario registrado</title>
+</head>
+<body>
+<header id="Cab">
+    <div class="logo">
+        <a href="indexinicio.html">
+            <img src="./Descargas/Logo.jpeg" alt="Logotipo" class="tam-imag" id="Logo">
+        </a>
+    </div>
+    <div class="encabezado">
+        <h1>PI - Pictures & Images</h1>
+    </div>
+    <div class="user-panel">
+        <form action="indexinicio.html" id="form">
+            <label for="login">Login</label>
+            <input type="text" id="login" name="login" required autofocus>
+            <label for="pwd">Pwd</label>
+            <input type="password" id="pwd" name="pwd" required>
+            <div class="botones">
+                <button type="submit" class="icon-check">Login</button>
+                <button type="reset" class="icon-cancel">Limpiar</button>
+            </div>
+            <p>No eres usuario? <a href="registro.html" id="registro">Regístrate</a></p>
+        </form>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li> <a href="#"><span>Inicio</span></a> </li>
+            <li> <a href="#"><span>Buscar</span></a> </li>
+            <li> <a href="#"><span>Perfil</span></a> </li>
+            <li> <a href="#"><span>Logout</span></a> </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="profile-card">
+            <div class="profile-header">
+                <h2>Perfil del usuario</h2>
+                <img src="./Descargas/Perfil.jpg" alt="Foto del usuario" class="profile-photo">
+            </div>
+            <div class="profile-info">
+                <p><strong>Nombre de usuario:</strong> Guillermo Sanchez</p>
+                <p><strong>Email:</strong> guillermo@gamail.com</p>
+                <p><strong>Sexo:</strong> Hombre</p>
+                <p><strong>Fecha de nacimiento:</strong> 16/06/2000</p>
+                <p><strong>Ciudad:</strong> Alicante</p>
+                <p><strong>País:</strong> China</p>
+                <p><strong>Biografía:</strong></p>
+                <p>descripción del usuario</p>
+                <p><strong>Álbumes:</strong></p>
+                <p>Album 1, Album 2...</p>
+            </div>
+        </section>
+        <section id="enlaces">
+            <h2>Enlaces</h2>
+            <ul>
+                <li><a href="#"><span>Modificar mis datos</span></a></li>
+                <li><a href="#"><span>Darse de baja</span></a></li>
+                <li><a href="#"><span>Visualizar mis álbumes</span></a></li>
+                <li><a href="#"><span>Crear un álbum nuevo</span></a></li>
+                <li><a href="#"><span>Solicitar un álbum impreso</span></a></li>
+                <li><a href="#"><span>Salir</span></a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; 2023 PI - Pictures & Images. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
